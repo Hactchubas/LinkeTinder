@@ -1,26 +1,22 @@
-# TODOList AceleraZG
-## Java Console-Based To-Do List Application
-
+# LinkeTinder AceleraZG
+### Made by: Kauã S. Maia
 ## Description
 
-Welcome to the Java Console-Based To-Do List Application, a powerful yet lightweight tool designed to simplify task management right from your terminal. This application empowers you to efficiently create, update, and track your tasks, ensuring that you're in control of your daily agenda and future objectives, all within a command-line interface.
+This is a project based on both sites/app ideas: LinkedIn and Tinder. 
+In this project the candidate user is able to search for job opportunities swiping those of interest, like the Tinder app,
+as well as the contractor user can swipe searching for good candidates.
 
 ## Features
 
-- **Task Management:** Easily add, modify, and remove tasks via simple text commands. Specify task priorities, due dates, and categorize them for effective organization.
-
-- **Intuitive Command-Line Interface:** The application boasts a user-friendly text-based interface, making it accessible for users of all levels, from beginners to command-line aficionados.
-
-- **Task Sorting:** Sort your tasks by due date, priority, or category, helping you focus on tasks that require immediate attention.
-
-- **Task Notes:** Attach detailed notes to your tasks, providing additional context and information when necessary.
+- **Listing:** See all candidates and contractors registered.
 
 
 ## Getting Started
 
-To run the Console-Based To-Do List Application, follow these steps:
+To run the Console-Base LinkeTinder Application, follow these steps:
 
 1. Clone this repository to your local machine.
 2. Ensure you have Java installed (version 8 or higher).
-3. Compile the application using the provided build script or your preferred Java compiler.
-4. Run the application from your terminal using the specified command. Obs.: The main class for this application is the "Main" class
+3. Ensure you have Groovy installed (version 4 or higher)
+4. Compile the application using the provided build script or your preferred Groovy/Java compiler.
+5. Run the application from your terminal using the specified command. Obs.: The main file for this application is the "Main" groovy script

@@ -33,4 +33,7 @@ class Manager {
 
     }
 
+    def void registerCandidate(Candidate candidate) {
+
+    }
 }

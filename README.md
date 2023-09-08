@@ -9,6 +9,7 @@ as well as the contractor user can swipe searching for good candidates.
 ## Features
 
 - **Listing:** See all candidates and contractors registered.
+- **Register User:** Register new user candidate or contractor to the lists.
 
 
 ## Getting Started

@@ -33,7 +33,11 @@ class Manager {
 
     }
 
-    def void registerCandidate(Candidate candidate) {
+    void registerCandidate(Candidate newCandidate) {
+        candidates << newCandidate
+    }
 
+    void registerContractor(Contractor newContractor) {
+        contractors << newContractor
     }
 }

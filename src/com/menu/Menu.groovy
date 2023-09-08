@@ -15,8 +15,10 @@ class Menu {
             Scanner scanner = new Scanner(System.in)
             println("""
                 Press 1 - To list all Candidates
-                Press 2 - To list all contractors
-                Press 3 - To exit""")
+                Press 2 - To list all Contractors
+                Press 3 - To register Candidate
+                Press 4 - To register Contractor
+                Press 5 - To exit""")
 
             switch (scanner.nextLine()){
                 case '1':
@@ -32,11 +34,33 @@ class Menu {
                     }
                     break
                 case '3':
+                    def newUserCandidate = handleNewUser("candidate")
+                    Candidate newCandidate = new Candidate(name: newUserCandidate[0], skills: newUserCandidate[1])
+                    manager.registerCandidate(newCandidate)
+                    break
+                case '4':
+                    def newUserContractor = handleNewUser("company")
+                    Contractor newContractor = new Contractor(company: newUserContractor[0], requiredSkills: newUserContractor[1])
+                    manager.registerContractor(newContractor)
+                    break
+                case '5':
                     run = false
                     break
                 default:
                     break
             }
         }
+    }
+
+    def static handleNewUser(String userType){
+        Scanner scanner = new Scanner(System.in)
+        println("Please enter the ${userType} name: " )
+        String name = scanner.nextLine()
+        println("Please enter the skills separeted by commas: ")
+        String skills = scanner.nextLine()
+
+        def skillList = skills.split(",")
+
+        [name, skillList]
     }
 }

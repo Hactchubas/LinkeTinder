@@ -7,7 +7,6 @@ import groovy.transform.ToString
 class Candidate extends User{
 
     List<String> skills
-
     // Create ProfessionalExperience class
     //List<String> professionalExpertises
     // Create Projects class

@@ -33,4 +33,11 @@ class Manager {
 
     }
 
+    void registerCandidate(Candidate newCandidate) {
+        candidates << newCandidate
+    }
+
+    void registerContractor(Contractor newContractor) {
+        contractors << newContractor
+    }
 }

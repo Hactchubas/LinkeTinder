@@ -1,5 +1,3 @@
-
-
 class User{
     name: string
     birthDate : Date
@@ -35,10 +33,9 @@ class Candidate extends User{
         description: string,
         email: string,
         password: string,
-        type: string,
         skills: string[]){
 
-        super(name,birthDate,phone,local,description, email, password, type)
+        super(name,birthDate,phone,local,description, email, password, "Candidate")
         this.skills = skills
     }
 }
@@ -54,10 +51,9 @@ class Contractor extends User{
         description: string,
         email: string,
         password: string,
-        type: string,
         jobs: Job[]){
             
-        super(name,birthDate,phone,local,description, email, password, type)
+        super(name,birthDate,phone,local,description, email, password, "Contractor")
         this.jobs = jobs
     }
 
@@ -73,3 +69,5 @@ class Job{
         this.requiredSkills = skills
     }
 }
+
+export {Candidate ,Contractor, Job}
